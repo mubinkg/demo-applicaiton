@@ -1,3 +1,4 @@
+import MainContent from "./main-content";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuList, NavigationMenuTrigger } from "./ui/navigation-menu"
 
 const NavBar = () => {
@@ -21,7 +22,9 @@ const NavBar = () => {
                     {navItems.map((item, index) => (
                         <NavigationMenuItem key={index} className=" text-white">
                             <NavigationMenuTrigger className="bg-[#101011f8] hover:bg-[#101011f8]">{item.label}</NavigationMenuTrigger>
-                            <NavigationMenuContent></NavigationMenuContent>
+                            <NavigationMenuContent className="bg-[#101011f8]">
+                                <MainContent />
+                            </NavigationMenuContent>
                         </NavigationMenuItem>
                     ))}
                 </NavigationMenuList>
