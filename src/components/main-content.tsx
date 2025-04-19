@@ -27,7 +27,9 @@ const MainContent = () => {
         { title: "Presentations", active: false },
     ];
     return (
-        <div className="flex flex-col mx-auto w-[100vw] items-start relative">
+        <div className="flex flex-col mx-auto w-[100vw] items-start relative" style={{
+            background: 'radial-gradient(53.09% 170.35% at 35.19% -50.99%, #262A31 0%, #000000 100%)'
+        }}>
             <div className="flex items-start relative self-stretch w-full">
                 {/* Sidebar */}
                 <div className="inline-flex flex-col items-start justify-center pl-[68px] pr-0 pt-[26px] pb-0 relative">
