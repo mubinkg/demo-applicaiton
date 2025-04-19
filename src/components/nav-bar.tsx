@@ -22,7 +22,7 @@ const NavBar = () => {
                     {navItems.map((item, index) => (
                         <NavigationMenuItem key={index} className=" text-white">
                             <NavigationMenuTrigger className="bg-[#101011f8] hover:bg-[#101011f8]">{item.label}</NavigationMenuTrigger>
-                            <NavigationMenuContent className="bg-[#101011f8]">
+                            <NavigationMenuContent className="bg-[#101011f8] -ml-2">
                                 <MainContent />
                             </NavigationMenuContent>
                         </NavigationMenuItem>
