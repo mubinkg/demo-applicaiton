@@ -3,19 +3,14 @@ import {
 } from "lucide-react";
 import { Button } from "./components/ui/button";
 import { Card, CardContent } from "./components/ui/card";
-import {
-  NavigationMenu,
-  NavigationMenuItem,
-  NavigationMenuList,
-} from "./components/ui/navigation-menu";
 import { ScrollArea } from "./components/ui/scroll-area";
 import { Separator } from "./components/ui/separator";
 import { JSX } from "react";
 import NewsBanner from "./components/news-banner";
 import MainHeader from "./components/main-header";
+import NavBar from "./components/nav-bar";
 
 export default function Layout(): JSX.Element {
-  // Sidebar menu items data
   const servicesNatureItems = [
     { icon: "/icon-2.svg", label: "Findings", active: true, hasChevron: true },
     { icon: "/icon-6.svg", label: "Structure", active: false },
@@ -29,7 +24,6 @@ export default function Layout(): JSX.Element {
     { icon: "/icon-5.svg", label: "Procedural AI Assistant", active: false },
   ];
 
-  // Main content cards data
   const serviceCards = [
     { title: "Audits", active: false },
     { title: "Assessments", active: false },
@@ -39,94 +33,14 @@ export default function Layout(): JSX.Element {
     { title: "Presentations", active: false },
   ];
 
-  // Navigation menu items
-  const navItems = [
-    { label: "Company & Culture", active: false },
-    { label: "Supply", active: true },
-    { label: "Opportunities", active: false },
-    { label: "Portfolio", active: false },
-    { label: "Technicalities", active: false },
-    { label: "Estimate & Test", active: false },
-  ];
-
-  // Action links
-  const actionLinks = [
-    { label: "Order an Assessment", color: "text-[#ff3f1e]" },
-    { label: "Insights & Content", color: "text-[#4cacff]" },
-    { label: "Book a meeting", color: "text-[#dcff1e]" },
-  ];
-
   return (
     <div className="bg-[#0f1011] flex flex-row justify-center w-full">
       <div className="bg-[#0f1011] w-full max-w-[1728px] h-[1270px] relative">
-        {/* Fixed Header */}
         <header className="flex flex-col w-full items-start fixed top-0 left-0 z-10">
-          {/* News Banner */}
           <NewsBanner />
-
-          {/* Main Header */}
           <MainHeader />
-
-          {/* Navigation Menu */}
-          <nav className="flex flex-wrap w-full items-center relative bg-[#101011] border-b-[0.5px] border-[#1e1e1ef0]">
-            <NavigationMenu className="flex-1">
-              <NavigationMenuList className="flex items-start px-0 py-[26.25px] w-full">
-                {navItems.map((item, index) => (
-                  <NavigationMenuItem key={index} className="px-3.5">
-                    <div className="inline-flex items-start pl-0 pr-[17.78px] py-0 relative">
-                      <span
-                        className={`relative w-fit mt-[-1.00px] font-manrope ${item.active ? "font-extrabold" : "font-medium"} text-white text-sm text-center tracking-[0.21px] leading-[18.0px] whitespace-nowrap overflow-hidden text-ellipsis`}
-                      >
-                        {item.label}
-                      </span>
-                      {item.label !== "Estimate & Test" && (
-                        <div
-                          className="flex flex-col w-[15px] h-[15px] items-start absolute top-0.5"
-                          style={{ left: `${item.label.length * 7}px` }}
-                        >
-                          <div className="flex flex-col w-[14.99px] h-[14.99px] items-center justify-center px-[1.5px] py-[4.49px]">
-                            <img
-                              className="w-3 h-1.5"
-                              alt="Down arrow"
-                              src={
-                                item.active
-                                  ? "/down-arrow-red-svg-3.svg"
-                                  : "/down-arrow-red-svg.svg"
-                              }
-                            />
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                  </NavigationMenuItem>
-                ))}
-              </NavigationMenuList>
-            </NavigationMenu>
-
-            {actionLinks.map((link, index) => (
-              <div
-                key={index}
-                className="inline-flex items-center gap-[0.01px] pl-0 pr-5 py-0"
-              >
-                <div className="inline-flex items-center">
-                  <div className="inline-flex pl-[28.01px] pr-0 py-0 flex-col items-start">
-                    <div className="justify-center inline-flex items-start">
-                      <div className="inline-flex flex-col items-start">
-                        <span
-                          className={`w-fit mt-[-1.00px] font-normal text-[15px] tracking-[0.07px] leading-normal whitespace-nowrap overflow-hidden text-ellipsis ${link.color}`}
-                        >
-                          {link.label}
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </nav>
+          <NavBar />
         </header>
-
-        {/* Main Content Area */}
         <div className="flex flex-col max-w-[1980px] w-full items-start pl-3 pr-0 pt-3.5 pb-0 absolute top-[163px] left-0 border-t border-[#2b2b2d1a] [background:radial-gradient(50%_50%_at_35%_-51%,rgba(38,42,49,1)_0%,rgba(0,0,0,1)_100%)]">
           <div className="flex items-start relative self-stretch w-full">
             {/* Sidebar */}
