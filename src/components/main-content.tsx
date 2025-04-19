@@ -58,7 +58,7 @@ const MainContent = () => {
                                 {/* Services' Nature section */}
                                 <div className="flex items-center gap-2 relative self-stretch w-full">
                                     <div className="inline-flex flex-col items-start">
-                                        <span className="w-fit mt-[-1.00px] font-bold text-wwwspaceshipcomcerulean text-[10px] tracking-[0.21px] leading-[10px] whitespace-nowrap">
+                                        <span className="w-fit mt-[-1.00px] font-bold text-wwwspaceshipcomcerulean text-[10px] tracking-[0.21px] leading-[10px] whitespace-nowrap text-white">
                                             SERVICES&apos; NATURE
                                         </span>
                                     </div>
@@ -100,7 +100,7 @@ const MainContent = () => {
                                 {/* Alignment Tools section */}
                                 <div className="flex items-center gap-2 relative self-stretch w-full">
                                     <div className="inline-flex flex-col items-start">
-                                        <span className="w-fit mt-[-1.00px] font-bold text-wwwspaceshipcomcerulean text-[10px] tracking-[0.21px] leading-[10px] whitespace-nowrap">
+                                        <span className="w-fit mt-[-1.00px] font-bold text-wwwspaceshipcomcerulean text-[10px] tracking-[0.21px] leading-[10px] whitespace-nowrap text-white">
                                             ALIGNMENT TOOLS
                                         </span>
                                     </div>
