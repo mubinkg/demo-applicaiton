@@ -33,8 +33,8 @@ const MainContent = () => {
             <div className="flex items-start relative self-stretch w-full">
                 {/* Sidebar */}
                 <div className="inline-flex flex-col items-start justify-center pl-[68px] pr-0 pt-[26px] pb-0 relative">
-                    <ScrollArea className="relative w-56 h-[520px] border-r border-[#2b2b2d33]">
-                        <div className="flex flex-col w-[199px] items-start gap-[22px] relative top-6 px-2">
+                    <ScrollArea className="relative w-60 h-[520px] border-r border-[#2b2b2d33]">
+                        <div className="flex flex-col w-full items-start gap-[22px] relative top-6 px-2">
                             <div className="flex flex-col items-start gap-4 relative self-stretch w-full">
                                 {/* What's hot section */}
                                 <Button
@@ -58,7 +58,7 @@ const MainContent = () => {
                                 {/* Services' Nature section */}
                                 <div className="flex items-center gap-2 relative self-stretch w-full">
                                     <div className="inline-flex flex-col items-start">
-                                        <span className="w-fit mt-[-1.00px] font-bold text-wwwspaceshipcomcerulean text-[10px] tracking-[0.21px] leading-[10px] whitespace-nowrap text-white">
+                                        <span className="w-fit mt-[-1.00px] font-bold text-wwwspaceshipcomcerulean text-[10px] tracking-[0.21px] leading-[10px] whitespace-nowrap text-[#009DE6]">
                                             SERVICES&apos; NATURE
                                         </span>
                                     </div>
@@ -70,7 +70,7 @@ const MainContent = () => {
                                         <Button
                                             key={index}
                                             variant="ghost"
-                                            className={`flex px-2 py-1.5 self-stretch w-full rounded-[18px] items-center justify-start h-auto ${item.active ? "bg-[#39b9ff1f]" : ""}`}
+                                            className={`flex px-2 py-1.5 self-stretch w-full rounded-[18px] hover:bg-[#39b9ff1f] items-center justify-start h-auto ${item.active ? "bg-[#39b9ff1f]" : ""}`}
                                         >
                                             <div className="inline-flex flex-col items-start">
                                                 <div className="inline-flex items-start">
@@ -100,7 +100,7 @@ const MainContent = () => {
                                 {/* Alignment Tools section */}
                                 <div className="flex items-center gap-2 relative self-stretch w-full">
                                     <div className="inline-flex flex-col items-start">
-                                        <span className="w-fit mt-[-1.00px] font-bold text-wwwspaceshipcomcerulean text-[10px] tracking-[0.21px] leading-[10px] whitespace-nowrap text-white">
+                                        <span className="w-fit mt-[-1.00px] font-bold text-wwwspaceshipcomcerulean text-[10px] tracking-[0.21px] leading-[10px] whitespace-nowrap text-[#009DE6]">
                                             ALIGNMENT TOOLS
                                         </span>
                                     </div>
@@ -112,7 +112,7 @@ const MainContent = () => {
                                         <Button
                                             key={index}
                                             variant="ghost"
-                                            className="flex px-2 py-1.5 self-stretch w-full rounded-[18px] items-center justify-start h-auto"
+                                            className="hover:bg-[#39b9ff1f] flex px-2 py-1.5 self-stretch w-full rounded-[18px] items-center justify-start h-auto"
                                         >
                                             <div className="inline-flex flex-col items-start">
                                                 <div className="inline-flex items-start">
