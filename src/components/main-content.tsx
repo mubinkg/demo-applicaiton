@@ -70,7 +70,7 @@ const MainContent = () => {
                                         <Button
                                             key={index}
                                             variant="ghost"
-                                            className={`flex px-2 py-1.5 self-stretch w-full rounded-[18px] hover:bg-[#39b9ff1f] items-center justify-start h-auto ${item.active ? "bg-[#39b9ff1f]" : ""}`}
+                                            className={`cursor-pointer flex px-2 py-1.5 self-stretch w-full rounded-[18px] hover:bg-[#39b9ff1f] items-center justify-start h-auto ${item.active ? "bg-[#39b9ff1f]" : ""}`}
                                         >
                                             <div className="inline-flex flex-col items-start">
                                                 <div className="inline-flex items-start">
@@ -112,7 +112,7 @@ const MainContent = () => {
                                         <Button
                                             key={index}
                                             variant="ghost"
-                                            className="hover:bg-[#39b9ff1f] flex px-2 py-1.5 self-stretch w-full rounded-[18px] items-center justify-start h-auto"
+                                            className="cursor-pointer hover:bg-[#39b9ff1f] flex px-2 py-1.5 self-stretch w-full rounded-[18px] items-center justify-start h-auto"
                                         >
                                             <div className="inline-flex flex-col items-start">
                                                 <div className="inline-flex items-start">
