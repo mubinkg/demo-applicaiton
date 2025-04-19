@@ -143,7 +143,7 @@ const MainContent = () => {
                             {serviceCards.map((card, index) => (
                                 <Card
                                     key={index}
-                                    className={`max-w-[1372.04px] px-[17.2px] py-[16.13px] rounded-[8.6px] inline-flex items-start ${card.active ? "bg-[#0086c4e0]" : "bg-transparent"}`}
+                                    className={`max-w-[1372.04px] px-[17.2px] py-[16.13px] rounded-[8.6px] inline-flex items-start hover:bg-[#0086c4e0] bg-transparent border-none cursor-pointer`}
                                 >
                                     <CardContent className="p-0">
                                         <div className="inline-flex flex-col items-start">
