@@ -83,7 +83,7 @@ export default function Layout(): JSX.Element {
                   </div>
                 </div>
 
-                <div className="justify-between pl-7 pr-[21px] py-1.5 flex-1 self-stretch grow flex items-center relative">
+                <div className="justify-between dm-mono-regular leading-0.5 pl-7 pr-[21px] py-1.5 flex-1 self-stretch grow flex items-center relative">
                   <div className="inline-flex items-center gap-[25px] relative">
                     <div className="font-normal text-sm tracking-[0.50px] leading-[13px] whitespace-nowrap">
                       <span className="text-[#4cacff] tracking-[0.07px]">
